@@ -11,11 +11,11 @@ export default function Footer() {
     return () => window.removeEventListener('resize', check);
   }, []);
 
-const socials = [
-  { Icon: Code2, href: 'https://github.com/iamdeveloper17', label: 'GitHub' },      // ← apna
-  { Icon: Briefcase, href: 'https://www.linkedin.com/in/amit-kumar-9193b0216/?isSelfProfile=true', label: 'LinkedIn' },  // ← apna
-  { Icon: Mail, href: 'mailto:ramit5752@gmail.com', label: 'Email' },               // ← apna
-];
+  const socials = [
+    { Icon: Code2, href: 'https://github.com/iamdeveloper17', label: 'GitHub' },      // ← apna
+    { Icon: Briefcase, href: 'https://www.linkedin.com/in/amit-kumar-9193b0216/?isSelfProfile=true', label: 'LinkedIn' },  // ← apna
+    { Icon: Mail, href: 'mailto:ramit5752@gmail.com', label: 'Email' },               // ← apna
+  ];
 
   const links = [
     { name: 'Home', href: '#home' },
@@ -196,18 +196,24 @@ const socials = [
             color: '#6b7280',
           }}
         >
+          <span style={{ textAlign: isMobile ? 'center' : 'left' }}>
+            © 2026 Amit Kumar
+          </span>
           <span
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '6px',
+              gap: '8px',
+              justifyContent: isMobile ? 'center' : 'flex-end',
             }}
           >
-            Made with{' '}
-            <Heart size={12} style={{ color: '#ec4899', fill: '#ec4899' }} /> by
-            Amit Kumar
+            <span>Built with</span>
+            <span style={{ color: '#a855f7', fontWeight: 600 }}>React</span>
+            <span style={{ color: '#374151' }}>•</span>
+            <span style={{ color: '#a855f7', fontWeight: 600 }}>Next.js</span>
+            <span style={{ color: '#374151' }}>•</span>
+            <span style={{ color: '#a855f7', fontWeight: 600 }}>Tailwind</span>
           </span>
-          <span>© 2026 All rights reserved</span>
         </div>
       </div>
     </footer>
