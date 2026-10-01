@@ -228,6 +228,7 @@ I ship production-ready apps that solve real problems.
             </a>
             <a
               href="/resume.pdf"
+              download="Amit_Kumar_Resume.pdf"
               className="btn btn-ghost"
               style={{
                 width: isMobile ? '100%' : 'auto',
