@@ -39,6 +39,26 @@ export const projects = [
     liveLink: "https://mmatradex.com",
     githubLink: "https://github.com/iamdeveloper17/MMA_Tradex",
   },
+  {
+    id: 5,
+    title: "Divyaputri Tradex LLP",
+    description:
+      "Responsive full-stack website for a nano technology products company. React and Vite frontend covering six product categories, with an Express and MongoDB backend that stores contact enquiries. Deployed live on a custom domain.",
+    image: "/images/divyaputri-tradex.png",
+    tags: ["React", "Vite", "Node.js", "Express", "MongoDB", "REST API"],
+    liveLink: "https://divyaputritradex.com",
+    githubLink: "https://github.com/iamdeveloper17/divyaputri-tradex-india",
+  },
+  {
+    id: 6,
+    title: "Vego & Thomson",
+    description:
+      "Multi-page website for a group operating in infrastructure, healthcare, technology and agro. React with React Router on the frontend, and an Express and MongoDB backend that saves enquiries and emails them to the team through SMTP.",
+    image: "/images/vego-thomson.png",
+    tags: ["React", "React Router", "Node.js", "Express", "MongoDB", "Nodemailer"],
+    liveLink: "https://vegothomsonindia.in",
+    githubLink: "https://github.com/iamdeveloper17/vego-thomson",
+  },
 ];
 
 // ⚡ Naya project add karne ke liye bas upar wale array mein ek aur object push kar do
