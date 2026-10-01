@@ -1,0 +1,295 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-gradient: gradient 6s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: #08080c;
+  color: #fff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ============ WRAP (Center container) ============ */
+.wrap {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* ============ SECTIONS ============ */
+.sect {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .sect {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+  .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* ============ GRADIENT TEXT ============ */
+.grad {
+  background: linear-gradient(120deg, #a855f7, #ec4899, #3b82f6, #a855f7);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 6s linear infinite;
+}
+
+/* ============ CARDS ============ */
+.card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.055), rgba(255,255,255,0.015));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 18px;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  border-color: rgba(168,85,247,0.45);
+  transform: translateY(-5px);
+  box-shadow: 0 22px 50px -20px rgba(168,85,247,0.35);
+}
+
+/* ============ BUTTONS ============ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: white;
+  box-shadow: 0 8px 24px -8px rgba(168,85,247,0.55);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px -10px rgba(168,85,247,0.75);
+}
+
+.btn-ghost {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: white;
+}
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(168,85,247,0.5);
+  transform: translateY(-2px);
+}
+
+/* ============ SECTION HEADERS ============ */
+.eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #a855f7;
+  padding: 8px 16px;
+  border: 1px solid rgba(168,85,247,0.35);
+  background: rgba(168,85,247,0.08);
+  border-radius: 9999px;
+  margin-bottom: 20px;
+}
+
+.h-section {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  .h-section {
+    font-size: 32px;
+  }
+}
+
+.p-section {
+  color: #9ca3af;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 620px;
+}
+
+/* ============ INPUT ============ */
+.input {
+  width: 100%;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 15px;
+  color: white;
+  font-family: inherit;
+  transition: all 0.25s ease;
+  outline: none;
+}
+.input::placeholder { color: #6b7280; }
+.input:focus {
+  border-color: #a855f7;
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 0 0 4px rgba(168,85,247,0.12);
+}
+
+/* ============ SCROLLBAR ============ */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #08080c; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#a855f7, #ec4899);
+  border-radius: 10px;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE OVERRIDES
+   ═══════════════════════════════════════════ */
+
+/* Hide desktop-only / Show mobile-only */
+.hide-mobile { display: initial; }
+.only-mobile { display: none; }
+
+/* ══════════ TABLET (max 1024px) ══════════ */
+@media (max-width: 1024px) {
+  .wrap {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .h-section {
+    font-size: 38px;
+  }
+}
+
+/* ══════════ MOBILE (max 768px) ══════════ */
+@media (max-width: 768px) {
+  /* Hide desktop nav */
+  .hide-mobile { display: none !important; }
+  .only-mobile { display: initial !important; }
+
+  .wrap {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .sect {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .h-section {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .p-section {
+    font-size: 14px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 2.4px;
+    padding: 6px 12px;
+    margin-bottom: 16px;
+  }
+
+  /* Buttons full-width on mobile */
+  .btn {
+    font-size: 14px;
+    padding: 13px 22px;
+  }
+  .btn-block-mobile {
+    width: 100%;
+  }
+
+  /* Cards */
+  .card {
+    border-radius: 16px;
+  }
+
+  /* Section header spacing */
+  .sect-header {
+    margin-bottom: 44px !important;
+  }
+}
+
+/* ══════════ SMALL MOBILE (max 480px) ══════════ */
+@media (max-width: 480px) {
+  .wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .sect {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .h-section {
+    font-size: 26px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+}
+
+/* ══════════ Ping animation (for status dot) ══════════ */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
