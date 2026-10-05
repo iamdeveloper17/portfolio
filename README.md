@@ -142,13 +142,13 @@ Vego & Thomson — Client Website	React Router, Express	Live
 📬 Contact
 Amit Kumar — Full Stack Developer
 
-📧 Email: your-email@gmail.com
+📧 Email: ramit5752@gmail.com
 
-💼 LinkedIn: linkedin.com/in/YOUR_USERNAME
+💼 LinkedIn: https://www.linkedin.com/in/amit-kumar-9193b0216/?isSelfProfile=true
 
-🐙 GitHub: @iamdeveloper17
+🐙 GitHub: https://github.com/iamdeveloper17/portfolio
 
-🌐 Portfolio: portfolio-rho-sage-80.vercel.app
+🌐 Portfolio: https://portfolio-rho-sage-80.vercel.app
 
 📄 License
 This project is licensed under the MIT License — free to use, modify, and distribute.
