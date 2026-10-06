@@ -1,6 +1,16 @@
 export const projects = [
   {
     id: 1,
+    title: "NextForge — AI SaaS Starter Kit",
+    description: "Production-ready open-source AI SaaS starter kit with Google OAuth authentication, real-time AI chat (Groq streaming), full chat history with sidebar and bulk delete, Paddle payment integration ($19/month subscription), dashboard with analytics, and fully responsive mobile-first UI. Built to help developers ship AI products in days, not months.",
+    image: "/images/nextforge.png",
+    tags: ["Next.js 16", "TypeScript", "MongoDB", "Prisma", "NextAuth v5", "Groq AI", "Paddle", "Tailwind CSS v4", "shadcn/ui", "Vercel"],
+    liveLink: "https://nextforge-liard.vercel.app",
+    githubLink: "https://github.com/iamdeveloper17/nextforge",
+    featured: true,
+},
+  {
+    id: 2,
     title: "Codexa — AI Design to Code Generator",
     description: "Production-ready SaaS platform that converts natural language prompts into complete React + Tailwind components in seconds. Features real-time streaming AI, GSAP-powered cinematic animations, secure user authentication, and database-backed project management.",
     image: "/images/codexa.png",
@@ -10,7 +20,7 @@ export const projects = [
     featured: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "ResumeAI",
     description: "AI-powered resume builder with live preview, Gemini AI content suggestions, ATS-friendly templates, and one-click clean PDF export. Features secure authentication, auto-save, and real-time editing.",
     image: "/images/resumeai.png",
@@ -20,7 +30,7 @@ export const projects = [
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "SupportFlow",
     description: "Multi-tenant SaaS helpdesk platform for managing customer support tickets. Features role-based access (Admin/Agent/Customer), real-time chat via Socket.io, email notifications, analytics dashboard, and subscription billing with Stripe/Razorpay.",
     image: "/images/supportflow.png",
@@ -30,7 +40,7 @@ export const projects = [
     featured: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "MMA Tradex LLP",
     description:
       "Full-stack company website with a React frontend and an Express and MongoDB backend for contact enquiries.",
@@ -40,7 +50,7 @@ export const projects = [
     githubLink: "https://github.com/iamdeveloper17/MMA_Tradex",
   },
   {
-    id: 5,
+    id: 6,
     title: "Divyaputri Tradex LLP",
     description:
       "Responsive full-stack website for a nano technology products company. React and Vite frontend covering six product categories, with an Express and MongoDB backend that stores contact enquiries. Deployed live on a custom domain.",
@@ -50,7 +60,7 @@ export const projects = [
     githubLink: "https://github.com/iamdeveloper17/divyaputri-tradex-india",
   },
   {
-    id: 6,
+    id: 7,
     title: "Vego & Thomson",
     description:
       "Multi-page website for a group operating in infrastructure, healthcare, technology and agro. React with React Router on the frontend, and an Express and MongoDB backend that saves enquiries and emails them to the team through SMTP.",

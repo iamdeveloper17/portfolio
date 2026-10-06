@@ -1,4 +1,3 @@
-markdown
 <div align="center">
 
 # 🚀 Amit Kumar — Portfolio
@@ -7,7 +6,7 @@ markdown
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-a855f7?style=for-the-badge)](https://portfolio-rho-sage-80.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-iamdeveloper17-181717?style=for-the-badge&logo=github)](https://github.com/iamdeveloper17)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/YOUR_USERNAME)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/amit-kumar-9193b0216/)
 
 </div>
 
@@ -107,10 +106,10 @@ Edit src/data/projects.js and add a new object:
 
 js
 {
-  id: 7,                                    // Unique ID
+  id: 7,
   title: "Your Project Name",
   description: "What it does and what problem it solves",
-  image: "/projects/your-image.png",        // Place in public/projects/
+  image: "/projects/your-image.png",
   tags: ["React", "Node.js", "MongoDB"],
   liveLink: "https://your-project.com",
   githubLink: "https://github.com/iamdeveloper17/your-project",
@@ -144,11 +143,11 @@ Amit Kumar — Full Stack Developer
 
 📧 Email: ramit5752@gmail.com
 
-💼 LinkedIn: https://www.linkedin.com/in/amit-kumar-9193b0216/?isSelfProfile=true
+💼 LinkedIn: linkedin.com/in/amit-kumar-9193b0216
 
-🐙 GitHub: https://github.com/iamdeveloper17/portfolio
+🐙 GitHub: @iamdeveloper17
 
-🌐 Portfolio: https://portfolio-rho-sage-80.vercel.app
+🌐 Portfolio: portfolio-rho-sage-80.vercel.app
 
 📄 License
 This project is licensed under the MIT License — free to use, modify, and distribute.
