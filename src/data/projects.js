@@ -53,11 +53,28 @@ export const projects = [
     id: 6,
     title: "MMA Tradex LLP",
     description:
-      "Full-stack company website with a React frontend and an Express and MongoDB backend for contact enquiries.",
+      "A production-grade full-stack platform for an AI & IPR consultancy firm. Features an AI Project Estimator, IPR Patentability Analyzer with PDF report generation, AI Chatbot with voice input, AI Smart Compose for contact forms, and a secure Admin CRM dashboard to manage leads and inquiries. Built with React, Tailwind CSS, Express, MongoDB, and Google Gemini AI.",
     image: "/images/mmatradex.png",
-    tags: ["React", "Vite", "Node.js", "Express", "MongoDB", "REST API"],
+    tags: [
+      "React", 
+      "Tailwind CSS", 
+      "Vite", 
+      "Node.js", 
+      "Express", 
+      "MongoDB", 
+      "Gemini AI", 
+      "REST API", 
+      "jsPDF", 
+      "Admin Dashboard"
+    ],
     liveLink: "https://mmatradex.com",
     githubLink: "https://github.com/iamdeveloper17/MMA_Tradex",
+    highlights: [
+      "Integrated Google Gemini AI for 4 distinct use cases",
+      "Implemented secure Admin panel with hidden access",
+      "Generated downloadable PDF reports using html2canvas & jsPDF",
+      "Built custom dark/light theme using CSS variables & Tailwind"
+    ]
   },
   {
     id: 7,
